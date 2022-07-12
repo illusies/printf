@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * rev_string - reverses a string in place
- * @s: string to reverse
- * Return: A pointer to a character
+ * rev_string
+ * @s: char
+ * Return: pointer
  */
 char *rev_string(char *s)
 {
@@ -31,8 +31,8 @@ char *rev_string(char *s)
 }
 
 /**
- * write_base - sends characters to be written on standard output
- * @str: String to parse
+ * write_base
+ * @str: char
  */
 void write_base(char *str)
 {
@@ -43,10 +43,10 @@ void write_base(char *str)
 }
 
 /**
- * base_len - Calculates the length for an octal number
- * @num: The number for which the length is being calculated
- * @base: Base to be calculated by
- * Return: An integer representing the length of a number
+ * base_len
+ * @num: int
+ * @base: int 
+ * Return: (i)
  */
 unsigned int base_len(unsigned int num, int base)
 {
@@ -60,11 +60,11 @@ unsigned int base_len(unsigned int num, int base)
 }
 
 /**
- * _memcpy - copy memory area
- * @dest: Destination for copying
- * @src: Source to copy from
- * @n: The number of bytes to copy
- * Return: The _memcpy() function returns a pointer to dest.
+ * _memcpy
+ * @dest: char
+ * @src: char
+ * @n: unsigned int
+ * Return: pointer
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
@@ -75,3 +75,4 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	dest[i] = '\0';
 	return (dest);
 }
+
