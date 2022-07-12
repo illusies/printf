@@ -1,10 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <limits.h>
 #include <stdarg.h>
 #include <stdlib.h>
-#include <unistd.h>
 
 int printf_hex_aux(unsigned long int num);
 int printf_HEX_aux(unsigned int num);
