@@ -1,11 +1,12 @@
 #include "main.h"
 #include <stdio.h>
+
 int hex_check(int, char);
 
 /**
- * print_binary - Converts a number from base 10 to binary
- * @list: List of arguments passed to this function
- * Return: The length of the number printed
+ * print_binary
+ * @list: va_list
+ * Return: len
  */
 int print_binary(va_list list)
 {
@@ -43,9 +44,9 @@ int print_binary(va_list list)
 }
 
 /**
- * print_octal - Prints the numeric representation of a number in octal base
- * @list: List of all the arguments passed to the program
- * Return: Number of symbols printed to stdout
+ * print_octal
+ * @list: va_list
+ * Return: len
  */
 int print_octal(va_list list)
 {
@@ -83,9 +84,9 @@ int print_octal(va_list list)
 }
 
 /**
- * print_hex - Prints a representation of a decimal number on base16 lowercase
- * @list: List of the arguments passed to the function
- * Return: Number of characters printed
+ * print_hex
+ * @list: va_list
+ * Return: len
  */
 int print_hex(va_list list)
 {
@@ -128,9 +129,9 @@ int print_hex(va_list list)
 }
 
 /**
- * print_heX - Prints a representation of a decimal number on base16 Uppercase
- * @list: List of the arguments passed to the function
- * Return: Number of characters printed
+ * print_heX
+ * @list: va_list
+ * Return: len
  */
 int print_heX(va_list list)
 {
@@ -173,10 +174,10 @@ int print_heX(va_list list)
 }
 
 /**
- * hex_check - Checks which hex function is calling it
- * @num: Number to convert into letter
- * @x: Tells which hex function is calling it
- * Return: Ascii value for a letter
+ * hex_check
+ * @num: int
+ * @x: char
+ * Return: (0)
  */
 int hex_check(int num, char x)
 {
@@ -190,3 +191,4 @@ int hex_check(int num, char x)
 		return (Hex[num]);
 	return (0);
 }
+
